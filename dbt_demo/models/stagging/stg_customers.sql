@@ -8,6 +8,7 @@ renamed as (
         id as customer_id,
         name as customer_name
     from source
+    where id is not null
 
 )
 select * from renamed
